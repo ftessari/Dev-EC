@@ -1,0 +1,127 @@
+inherited FMain_LgXhdpiTb: TFMain_LgXhdpiTb
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited TabControl: TTabControl
+    Size.Width = 480.000000000000000000
+    Size.Height = 716.000000000000000000
+    TabIndex = 1
+    Sizes = (
+      480s
+      667s
+      480s
+      667s
+      480s
+      667s
+      480s
+      667s)
+    inherited TabGerar: TTabItem
+      Size.Width = 120.000000000000000000
+      ExplicitSize.cx = 200.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited gbGerar: TGroupBox
+        Size.Width = 480.000000000000000000
+        Size.Height = 667.000000000000000000
+        inherited GroupBox2: TGroupBox
+          Size.Width = 480.000000000000000000
+          Size.Height = 667.000000000000000000
+          inherited ListBoxDesafios: TListBox
+            Size.Width = 470.000000000000000000
+            Size.Height = 637.000000000000000000
+            Viewport.Width = 470.000000000000000000
+            Viewport.Height = 637.000000000000000000
+          end
+        end
+      end
+    end
+    inherited TabView: TTabItem
+      IsSelected = True
+      Size.Width = 120.000000000000000000
+      ExplicitSize.cx = 120.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited GroupBoxResult: TGroupBox
+        Size.Width = 480.000000000000000000
+        Size.Height = 667.000000000000000000
+        inherited MemoResult: TMemo
+          Size.Width = 470.000000000000000000
+          Size.Height = 637.000000000000000000
+          Viewport.Width = 462.000000000000000000
+          Viewport.Height = 629.000000000000000000
+        end
+      end
+    end
+    inherited TabOpcs: TTabItem
+      IsSelected = False
+      Size.Width = 120.000000000000000000
+      ExplicitSize.cx = 100.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited gbOpcs: TGroupBox
+        Size.Width = 480.000000000000000000
+        Size.Height = 667.000000000000000000
+        inherited GroupBoxTipos: TGroupBox
+          Size.Width = 462.000000000000000000
+        end
+        inherited GroupBoxTemas: TGroupBox
+          Size.Width = 462.000000000000000000
+        end
+        inherited GroupBoxQuando: TGroupBox
+          Size.Width = 462.000000000000000000
+        end
+        inherited GroupBoxFinal: TGroupBox
+          Size.Width = 462.000000000000000000
+        end
+        inherited VertScrollBox: TVertScrollBox
+          Position.X = 462.000000000000000000
+          Size.Height = 667.000000000000000000
+          Viewport.Width = 18.000000000000000000
+          Viewport.Height = 667.000000000000000000
+        end
+        inherited GroupBoxOnde: TGroupBox
+          Size.Width = 462.000000000000000000
+        end
+        inherited GroupBoxExtra: TGroupBox
+          Size.Width = 462.000000000000000000
+        end
+        inherited GroupBox1: TGroupBox
+          Size.Width = 462.000000000000000000
+        end
+      end
+    end
+    inherited TabSobre: TTabItem
+      Size.Width = 120.000000000000000000
+      ExplicitSize.cx = 160.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited gbSobre: TGroupBox
+        Size.Width = 480.000000000000000000
+        Size.Height = 667.000000000000000000
+        inherited Label1: TLabel
+          Margins.Top = 25.000000000000000000
+          Position.Y = 75.000000000000000000
+          Size.Width = 480.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+        inherited Label2: TLabel
+          Margins.Top = 25.000000000000000000
+          Position.Y = 25.000000000000000000
+          Size.Width = 480.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
+    end
+  end
+  inherited pnlTop: TPanel
+    Size.Width = 480.000000000000000000
+    inherited imgLogo: TImageViewer
+      Position.X = 414.000000000000000000
+      Viewport.Width = 66.000000000000000000
+      Viewport.Height = 57.000000000000000000
+    end
+  end
+  inherited pnlBtn: TPanel
+    Position.Y = 773.000000000000000000
+    Size.Width = 480.000000000000000000
+    inherited btnGerar: TButton
+      Position.X = 382.000000000000000000
+    end
+  end
+end

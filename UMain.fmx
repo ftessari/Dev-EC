@@ -1,0 +1,850 @@
+object FMain: TFMain
+  Left = 0
+  Top = 0
+  Caption = 'Escrita Criativa'
+  ClientHeight = 1484
+  ClientWidth = 322
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  DesignerMasterStyle = 3
+  object TabControl: TTabControl
+    Align = Client
+    Size.Width = 322.000000000000000000
+    Size.Height = 1371.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 2
+    TabOrder = 0
+    TabPosition = PlatformDefault
+    Sizes = (
+      322s
+      1322s
+      322s
+      1322s
+      322s
+      1322s
+      322s
+      1322s)
+    object TabGerar: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 80.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'In'#237'cio'
+      ExplicitSize.cx = 80.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object gbGerar: TGroupBox
+        Align = Client
+        Size.Width = 322.000000000000000000
+        Size.Height = 1322.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object GroupBox2: TGroupBox
+          Align = Client
+          Size.Width = 322.000000000000000000
+          Size.Height = 1322.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Ultimos Desafios'
+          TabOrder = 0
+          object ListBoxDesafios: TListBox
+            Align = Client
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 25.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Size.Width = 312.000000000000000000
+            Size.Height = 1292.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            DisableFocusEffect = True
+            DefaultItemStyles.ItemStyle = ''
+            DefaultItemStyles.GroupHeaderStyle = ''
+            DefaultItemStyles.GroupFooterStyle = ''
+            Viewport.Width = 312.000000000000000000
+            Viewport.Height = 1292.000000000000000000
+          end
+        end
+      end
+    end
+    object TabView: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 80.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Resultado'
+      ExplicitSize.cx = 80.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object GroupBoxResult: TGroupBox
+        Align = Client
+        Size.Width = 322.000000000000000000
+        Size.Height = 1322.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Desafio'
+        TabOrder = 0
+        object MemoResult: TMemo
+          Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+          DataDetectorTypes = []
+          ReadOnly = True
+          Align = Client
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 25.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Size.Width = 312.000000000000000000
+          Size.Height = 1292.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Viewport.Width = 304.000000000000000000
+          Viewport.Height = 1284.000000000000000000
+        end
+      end
+    end
+    object TabOpcs: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 80.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Op'#231#245'es'
+      ExplicitSize.cx = 80.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object gbOpcs: TGroupBox
+        Align = Client
+        Size.Width = 322.000000000000000000
+        Size.Height = 1322.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Op'#231#245'es'
+        TabOrder = 0
+        object GroupBoxTipos: TGroupBox
+          Align = Top
+          Margins.Top = 25.000000000000000000
+          Position.Y = 25.000000000000000000
+          Size.Width = 304.000000000000000000
+          Size.Height = 112.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Tipos de Texto'
+          TabOrder = 6
+          object pnlTipos01: TPanel
+            Align = Left
+            Margins.Top = 25.000000000000000000
+            Position.Y = 25.000000000000000000
+            Size.Width = 145.000000000000000000
+            Size.Height = 87.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object chkCronica: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 53.000000000000000000
+              Size.Width = 145.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              Text = 'Cr'#244'nica'
+            end
+            object chkNarrativa: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 5.000000000000000000
+              Size.Width = 145.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 4
+              Text = 'Narrativa'
+            end
+            object chkDissertativa: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 29.000000000000000000
+              Size.Width = 145.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 3
+              Text = 'Dissertativa'
+            end
+          end
+          object pnlTipos02: TPanel
+            Align = Left
+            Margins.Top = 25.000000000000000000
+            Position.X = 145.000000000000000000
+            Position.Y = 25.000000000000000000
+            Size.Width = 145.000000000000000000
+            Size.Height = 87.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object chkRomance: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 29.000000000000000000
+              Size.Width = 145.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 5
+              Text = 'Romance'
+            end
+            object chkCarta: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 5.000000000000000000
+              Size.Width = 145.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'Carta'
+            end
+            object chkConto: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 53.000000000000000000
+              Size.Width = 145.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              Text = 'Conto'
+            end
+          end
+        end
+        object GroupBoxTemas: TGroupBox
+          Align = Top
+          Margins.Top = 25.000000000000000000
+          Position.Y = 162.000000000000000000
+          Size.Width = 304.000000000000000000
+          Size.Height = 183.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Tema Central'
+          TabOrder = 5
+          object pnlTemas01: TPanel
+            Align = Left
+            Margins.Top = 25.000000000000000000
+            Position.Y = 25.000000000000000000
+            Size.Width = 145.000000000000000000
+            Size.Height = 158.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            object chkSobrenatural: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 29.000000000000000000
+              Size.Width = 145.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'Sobrenatural'
+            end
+            object chkInfantoj: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 125.000000000000000000
+              Size.Width = 145.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 3
+              Text = 'Infantojuvenis'
+            end
+            object chkFic: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 101.000000000000000000
+              Size.Width = 145.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 4
+              Text = 'Fic'#231#227'o'
+            end
+            object chkFantasia: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 77.000000000000000000
+              Size.Width = 145.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 5
+              Text = 'Fantasia'
+            end
+            object chkEpico: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 53.000000000000000000
+              Size.Width = 145.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 6
+              Text = #201'picos'
+            end
+            object chkAventura: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 5.000000000000000000
+              Size.Width = 145.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 7
+              Text = 'Aventura'
+            end
+          end
+          object pnlTemas02: TPanel
+            Align = Left
+            Margins.Top = 25.000000000000000000
+            Position.X = 145.000000000000000000
+            Position.Y = 25.000000000000000000
+            Size.Width = 145.000000000000000000
+            Size.Height = 158.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            object chkPolicial: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 53.000000000000000000
+              Size.Width = 145.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'Policial'
+            end
+            object chkUtopico: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 29.000000000000000000
+              Size.Width = 145.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 3
+              Text = 'Ut'#243'pico'
+            end
+            object chkDrama: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 101.000000000000000000
+              Size.Width = 145.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 6
+              Text = 'Drama'
+            end
+            object chkDistopico: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 5.000000000000000000
+              Size.Width = 145.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 7
+              Text = 'Distopico'
+            end
+            object chkRomantico: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 77.000000000000000000
+              Size.Width = 145.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 5
+              Text = 'Rom'#226'ntico'
+            end
+            object chkHorror: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 125.000000000000000000
+              Size.Width = 145.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 4
+              Text = 'Horror'
+            end
+          end
+        end
+        object GroupBoxQuando: TGroupBox
+          Align = Top
+          Margins.Top = 25.000000000000000000
+          Position.Y = 370.000000000000000000
+          Size.Width = 304.000000000000000000
+          Size.Height = 111.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Quando?'
+          TabOrder = 4
+          object pnlQuando01: TPanel
+            Align = Left
+            Margins.Top = 25.000000000000000000
+            Position.Y = 25.000000000000000000
+            Size.Width = 145.000000000000000000
+            Size.Height = 86.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 4
+            object chkMedieval: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 29.000000000000000000
+              Size.Width = 145.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'Medieval'
+            end
+            object chkFeudal: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 53.000000000000000000
+              Size.Width = 145.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 3
+              Text = 'Feudal'
+            end
+            object chkPreHist: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 5.000000000000000000
+              Size.Width = 145.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 4
+              Text = 'Pr'#233'-hist'#243'ria'
+            end
+          end
+          object Panel5: TPanel
+            Align = Left
+            Margins.Top = 25.000000000000000000
+            Position.X = 145.000000000000000000
+            Position.Y = 25.000000000000000000
+            Size.Width = 145.000000000000000000
+            Size.Height = 86.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            object chkFuturo: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 29.000000000000000000
+              Size.Width = 145.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'Futuro'
+            end
+            object chkContemp: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 5.000000000000000000
+              Size.Width = 145.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 3
+              Text = 'Contempor'#226'neo'
+            end
+          end
+        end
+        object GroupBoxFinal: TGroupBox
+          Align = Top
+          Margins.Top = 25.000000000000000000
+          Position.Y = 898.000000000000000000
+          Size.Width = 304.000000000000000000
+          Size.Height = 86.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Finais'
+          TabOrder = 0
+          object Panel4: TPanel
+            Align = Left
+            Margins.Top = 25.000000000000000000
+            Position.Y = 25.000000000000000000
+            Size.Width = 145.000000000000000000
+            Size.Height = 61.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            object chkTragedia: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 29.000000000000000000
+              Size.Width = 145.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'Trag'#233'dia'
+            end
+            object chkFeliz: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 5.000000000000000000
+              Size.Width = 145.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 3
+              Text = 'Feliz'
+            end
+          end
+        end
+        object VertScrollBox: TVertScrollBox
+          Align = MostRight
+          Position.X = 304.000000000000000000
+          Size.Width = 18.000000000000000000
+          Size.Height = 1322.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 7
+          Viewport.Width = 18.000000000000000000
+          Viewport.Height = 1322.000000000000000000
+        end
+        object GroupBoxOnde: TGroupBox
+          Align = Top
+          Margins.Top = 25.000000000000000000
+          Position.Y = 506.000000000000000000
+          Size.Width = 304.000000000000000000
+          Size.Height = 230.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Onde?'
+          TabOrder = 3
+          object Panel1: TPanel
+            Align = Left
+            Margins.Top = 25.000000000000000000
+            Position.Y = 25.000000000000000000
+            Size.Width = 161.000000000000000000
+            Size.Height = 205.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            object chkEuropa: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 29.000000000000000000
+              Size.Width = 161.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'Europa'
+            end
+            object chkAfrica: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 77.000000000000000000
+              Size.Width = 161.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 3
+              Text = #193'frica'
+            end
+            object chkOceania: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 101.000000000000000000
+              Size.Width = 161.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 7
+              Text = 'Oceania'
+            end
+            object chkAsia: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 53.000000000000000000
+              Size.Width = 161.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 8
+              Text = 'Asia'
+            end
+            object chkAmerica: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 5.000000000000000000
+              Size.Width = 161.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 9
+              Text = 'Am'#233'rica'
+            end
+            object chkOtPlaneta: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 149.000000000000000000
+              Size.Width = 161.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 6
+              Text = 'Outro Planeta'
+            end
+            object chkRealP: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 173.000000000000000000
+              Size.Width = 161.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 5
+              Text = 'Realidade Paralela'
+            end
+            object chkPolar: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 125.000000000000000000
+              Size.Width = 161.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 4
+              Text = 'Regi'#227'o Polar'
+            end
+          end
+        end
+        object GroupBoxExtra: TGroupBox
+          Align = Top
+          Margins.Top = 25.000000000000000000
+          Position.Y = 1009.000000000000000000
+          Size.Width = 304.000000000000000000
+          Size.Height = 184.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Extra'
+          TabOrder = 2
+          object Panel2: TPanel
+            Align = Left
+            Margins.Top = 25.000000000000000000
+            Position.Y = 25.000000000000000000
+            Size.Width = 185.000000000000000000
+            Size.Height = 159.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            object chkEro: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 101.000000000000000000
+              Size.Width = 185.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'Erotismo'
+            end
+            object chkSuper: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 53.000000000000000000
+              Size.Width = 185.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 4
+              Text = 'Super-poderes'
+            end
+            object chkZumbis: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 29.000000000000000000
+              Size.Width = 185.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 5
+              Text = 'Zumbis'
+            end
+            object chkFadas: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 5.000000000000000000
+              Size.Width = 185.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 6
+              Text = 'Fadas'
+            end
+            object chkMito: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 77.000000000000000000
+              Size.Width = 185.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 3
+              Text = 'Criaturas Mitol'#243'gicas'
+            end
+          end
+        end
+        object GroupBox1: TGroupBox
+          Align = Top
+          Margins.Top = 25.000000000000000000
+          Position.Y = 761.000000000000000000
+          Size.Width = 304.000000000000000000
+          Size.Height = 112.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Conflito/ Crise'
+          TabOrder = 1
+          object Panel3: TPanel
+            Align = Left
+            Margins.Top = 25.000000000000000000
+            Position.Y = 25.000000000000000000
+            Size.Width = 161.000000000000000000
+            Size.Height = 87.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 4
+            object chkCrime: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 29.000000000000000000
+              Size.Width = 161.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'Crime'
+            end
+            object chkPoder: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 53.000000000000000000
+              Size.Width = 161.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 3
+              Text = 'Poder'
+            end
+            object chkAmoroso: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 5.000000000000000000
+              Size.Width = 161.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 4
+              Text = 'Amoroso'
+            end
+          end
+          object Panel6: TPanel
+            Align = Left
+            Margins.Top = 25.000000000000000000
+            Position.X = 161.000000000000000000
+            Position.Y = 25.000000000000000000
+            Size.Width = 136.000000000000000000
+            Size.Height = 87.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            object chkPsico: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 5.000000000000000000
+              Size.Width = 136.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 3
+              Text = 'Psicol'#243'gico'
+            end
+            object chkIdent: TCheckBox
+              Align = Top
+              Margins.Top = 5.000000000000000000
+              Position.Y = 29.000000000000000000
+              Size.Width = 136.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'Identidade'
+            end
+          end
+        end
+      end
+    end
+    object TabSobre: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 82.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Sobre'
+      ExplicitSize.cx = 82.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object gbSobre: TGroupBox
+        Align = Client
+        Size.Width = 322.000000000000000000
+        Size.Height = 1322.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label1: TLabel
+          Align = Top
+          StyledSettings = [Size, FontColor]
+          Size.Width = 322.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Segoe Script'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.HorzAlign = Center
+          Text = 'Desafio'
+        end
+        object Label2: TLabel
+          Align = Top
+          StyledSettings = [FontColor]
+          Position.Y = 23.000000000000000000
+          Size.Width = 322.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Segoe Script'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.HorzAlign = Center
+          Text = 'Escrita Criativa'
+        end
+      end
+    end
+  end
+  object pnlTop: TPanel
+    Align = Top
+    Size.Width = 322.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    TabStop = False
+    object imgLogo: TImageViewer
+      Align = Right
+      Position.X = 256.000000000000000000
+      Size.Width = 66.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      TabStop = False
+      Viewport.Width = 66.000000000000000000
+      Viewport.Height = 57.000000000000000000
+    end
+    object btnMenu: TButton
+      Align = Left
+      Size.Width = 49.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = '='
+    end
+  end
+  object pnlBtn: TPanel
+    Align = Bottom
+    Position.Y = 1428.000000000000000000
+    Size.Width = 322.000000000000000000
+    Size.Height = 56.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object btnGerar: TButton
+      Align = Right
+      Position.X = 224.000000000000000000
+      Size.Width = 98.000000000000000000
+      Size.Height = 56.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Gerar'
+    end
+    object btnAll: TButton
+      Align = Left
+      Size.Width = 98.000000000000000000
+      Size.Height = 56.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Todos'
+      OnClick = btnAllClick
+    end
+  end
+end
